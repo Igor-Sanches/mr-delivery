@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/birdsoft"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:fontFamily="@font/gotham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birdsoft_technologies"/>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"/>
+</LinearLayout>

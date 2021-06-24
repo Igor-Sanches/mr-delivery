@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/casa" android:id="@+id/casa"/>
+    <item android:title="@string/sobrado" android:id="@+id/sobrado"/>
+    <item android:title="@string/predio" android:id="@+id/predio"/>
+    <item android:title="@string/condominios_casas" android:id="@+id/condominios_casas"/>
+
+</menu>

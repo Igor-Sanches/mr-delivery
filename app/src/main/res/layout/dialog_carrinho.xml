@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/translation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/preto"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="@font/gotham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carrinho"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_action_carrinho"
+            app:drawableTint="@color/preto"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:fontFamily="@font/gill_sans_mt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_adicionado_carrinho"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/carGo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ir_ao_carrinho"
+                android:textAllCaps="false"
+                android:textColor="@color/branco"
+                android:drawableStart="@drawable/ic_action_carrinho"
+                app:drawableTint="@color/branco"
+                android:backgroundTint="@color/colorBtnVerde"/>
+
+            <Button
+                android:id="@+id/continueCar"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continuar_comprando"
+                android:textColor="@color/branco"
+                android:drawableStart="@drawable/ic_action_next"
+                app:drawableTint="@color/branco"
+                android:backgroundTint="@color/colorBtnAzul"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

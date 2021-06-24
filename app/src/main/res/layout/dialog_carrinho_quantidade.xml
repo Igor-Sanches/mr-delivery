@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_max"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/gotham"/>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_remover"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/preto"
+                    android:background="@drawable/btn_acriligo_add_remove_circular"
+                    android:src="@drawable/ic_action_remove"/>
+
+                <TextView
+                    android:id="@+id/numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+                <ImageButton
+                    android:id="@+id/btn_adicionar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="@color/preto"
+                    android:background="@drawable/btn_acriligo_add_remove_circular"
+                    android:src="@drawable/ic_action_add"/>
+
+            </LinearLayout>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/valorText"
+                app:robotoFontFamily="roboto_mono"
+                app:robotoTextStyle="normal"
+                app:autoSizeTextType="uniform"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 0,00" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/cancelar"
+                android:textAllCaps="false"
+                android:textColor="@color/acriligo_tint_vermelho"
+                android:background="@drawable/btn_acriligo_vermelho_quadrado"/>
+            <Button
+                android:id="@+id/confirmar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/adicionar"
+                android:textColor="@color/acriligo_tint_verde"
+                android:background="@drawable/btn_acriligo_verde_quadrado"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

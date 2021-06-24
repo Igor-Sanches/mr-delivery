@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.birdsoft.meurestaurante">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".betaScreen.FzerLoginComoClienteActivity"
+            android:theme="@style/AppTheme.HomeIniciarBeta" />
+        <activity
+            android:name=".view.BloqueadoActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.AcompanhamentoPedidoActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".login.WelcomeActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".login.SplashActivity"
+            android:theme="@style/AppTheme.HomeIniciar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Birdsoft Technologies (Igor de Jesus Dutra Sanches) developer   <3 -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.BaseViewLoginActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".login.BaseViewActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.CarrinhoActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.CardapioActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.HistoricosActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.CuponsActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".view.AppSettingsActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.HomeIniciar" />
+
+        <service
+            android:name=".servicos.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

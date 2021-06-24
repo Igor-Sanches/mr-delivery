@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CardapioActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWindowBackground">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:transitionName="logotipoScreen"
+                android:padding="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_pizzaria" />
+            <ImageButton
+                android:onClick="onBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:tint="@color/branco"
+                android:src="@drawable/ic_action_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <include
+                layout="@layout/icone_carrinho"
+                android:onClick="oncarrinho"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:tint="@color/branco"
+                android:src="@drawable/ic_action_carrinho"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/endereco_changed"
+            android:visibility="gone"
+            android:onClick="onEnderecoChanged"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            tools:targetApi="m">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_localizacao"
+                app:tint="@color/preto" />
+            <TextView
+                android:fontFamily="@font/gill_sans_mt"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/localizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/preto"
+                android:textSize="12dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <include
+            android:layout_height="match_parent"
+            layout="@layout/fragments"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

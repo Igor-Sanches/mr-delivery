@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="48dp"
+    android:onClick="oncarrinho"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_action_carrinho"/>
+
+    <TextView
+        android:visibility="gone"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:id="@+id/contador_carrinho"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/gill_sans_mt"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_icon"
+        android:backgroundTint="@color/branco"
+        tools:ignore="SmallSp" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/meu_pedido"
+        android:id="@+id/meuspedidosBtn"
+        android:visible="false"
+        android:icon="@drawable/delivery_icon"/>
+    <item
+        android:title="@string/novo_op_pedido"
+        android:id="@+id/novopedidosBtn"
+        android:visible="false"
+        android:icon="@drawable/novo_pedido_icon"/>
+    <item
+        android:title="@string/historicos"
+        android:id="@+id/historicosBtn"
+        android:icon="@drawable/historico_icon"/>
+    <item
+        android:title="@string/meus_cupons"
+        android:id="@+id/cuponsBtn"
+        android:icon="@drawable/meus_cupons_icon"/>
+
+</menu>

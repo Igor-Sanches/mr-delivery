@@ -1,0 +1,49 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    <string-array name="listaHoras">
+        <item>01/01/2020</item>
+        <item>01 jan 2020</item>
+        <item>01 jan, 2020</item>
+        <item>dom, 01 jan 2020</item>
+        <item>domingo, 01 jar 2020</item>
+        <item>01 janeiro 2020</item>
+        <item>01 janeiro, 2020</item>
+        <item>dom, 01 janeiro 2020</item>
+        <item>domingo, 01 janeiro 2020</item>
+    </string-array>
+    <string-array name="listaHorasValue">
+        <item>dd/MM/yyyy</item>
+        <item>dd MMM yyyy</item>
+        <item>dd MMM, yyyy</item>
+        <item>EEE, dd MMM yyyy</item>
+        <item>EEEE, dd MMM yyyy</item>
+        <item>dd MMMM yyyy</item>
+        <item>dd MMMM, yyyy</item>
+        <item>EEE, dd MMMM yyyy</item>
+        <item>EEEE, dd MMMM yyyy</item>
+    </string-array>
+    <string-array name="listaVibration">
+        <item>2 segundos</item>
+        <item>3 segundos</item>
+        <item>4 segundos</item>
+        <item>5 segundos</item>
+        <item>6 segundos</item>
+    </string-array>
+
+    <string-array name="listaVibrationValue">
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+    </string-array>
+</resources>
